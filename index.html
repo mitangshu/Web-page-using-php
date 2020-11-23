@@ -1,0 +1,231 @@
+
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="./static.css"/>
+<style type="text/css">
+h1
+{ color: black;
+  text-align: center;
+} 
+.header {
+  padding: 50px; 
+   /* some padding */
+  text-align: center; /* center the text */
+  background: #1CFFF1 ; /* green background */
+  color: black; /* white text color */
+}
+.header h1
+{
+    font-size: 40px;
+}
+*
+{
+margin:2px;
+box-sizing: border-box;
+}
+.footer
+{
+ height:400px;
+ background-color: white;
+ color: black;
+}
+section
+{
+padding: 20px;
+height: 700px;
+background-color: black;
+color: white;
+font-size: 20;
+text-align: justify;
+  text-justify: inter-word;
+}
+.section
+{
+height: 700px;
+background-color: black;
+color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+a
+        {
+        text-decoration: none;    
+        float: left;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 130px;
+        font-size: 22;
+        color: black;
+        }
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  color:#43BF95;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: center;
+  display: block;
+  color: #1CFFF1  ;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.center {
+  float: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #40D5CC ;
+  color: black;
+  padding-right: 40px;
+  padding: 20px 30px;
+}
+.row {  
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: row wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-color: black;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: #1C1919;
+  padding: 20px;
+  font-size: 24;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 34px;
+  border: none;
+  outline: none;
+  background-color: #1CFFF1;
+  color: black;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+</style>
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11193;</button>
+    <img src="./ML.png" alt="Machine Learning" style="float:left;width:120px; height:110px; margin-top: 20px; margin-left: 30px ">
+    <div class="header">
+ <h1>Welcome to Home page</h1>
+    
+</div>
+<div class="navbar">
+  <a href="./index.HTML"class="left">Home</a>
+    <a href="./about.html"class="left">About</a>
+    <a href="./products.html" class="left">Product</a>
+    <a href="./gallery.html" class="left">Gallery</a>
+    <a href="./contact.html" class="left">Contact</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <br>
+        <h2>Register Here</h2>
+    
+<form action="" method="post">
+    <br>
+    <br>
+    <input type="email" name="txtemail" placeholder="Enter Email" required="" />
+    <br>
+    <br>
+    <input type="password" name="txtpass" placeholder="Enter password" required="" />
+    <br>
+    <br>
+    <input type="number" name="txtmobile" placeholder="Enter mobileno"/>
+    <br>
+    <br>
+    <input type="text" name="txtfname" placeholder="Enter Fullname"/>
+    <br>
+    <br>
+    <input type="text" name="txtaddress" placeholder="Enter Address"/>
+    <br>
+    <br>
+    <input  type="submit" name="btnssubmit" value="register" />
+</form>
+</div>
+<div class="main">
+    <br>
+    <h2>What is Machine Learning?</h2>
+    <br>
+    <br>
+    <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.<br><br>
+The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions accordingly.
+But, using the classic algorithms of machine learning, text is considered as a sequence of keywords; instead, an approach based on semantic analysis mimics the human ability to understand the meaning of a text.
+</p>
+    </div>
+    
+</div>
+<section><br>
+    <h2>Some Machine Learning Methods</h2>
+    <br><br><br><h4>Machine learning algorithms are often categorized as supervised or unsupervised.</h4>
+    <br><p>1. Supervised machine learning algorithms can apply what has been learned in the past to new data using labeled examples to predict future events. Starting from the analysis of a known training dataset, the learning algorithm produces an inferred function to make predictions about the output values. The system is able to provide targets for any new input after sufficient training. The learning algorithm can also compare its output with the correct, intended output and find errors in order to modify the model accordingly.
+<br><br>2. In contrast, unsupervised machine learning algorithms are used when the information used to train is neither classified nor labeled. Unsupervised learning studies how systems can infer a function to describe a hidden structure from unlabeled data. The system doesn’t figure out the right output, but it explores the data and can draw inferences from datasets to describe hidden structures from unlabeled data.<br>
+<br>3. Semi-supervised machine learning algorithms fall somewhere in between supervised and unsupervised learning, since they use both labeled and unlabeled data for training – typically a small amount of labeled data and a large amount of unlabeled data. The systems that use this method are able to considerably improve learning accuracy. Usually, semi-supervised learning is chosen when the acquired labeled data requires skilled and relevant resources in order to train it / learn from it. Otherwise, acquiring unlabeled data generally doesn’t require additional resources.<br><br>
+4. Reinforcement machine learning algorithms is a learning method that interacts with its environment by producing actions and discovers errors or rewards. Trial and error search and delayed reward are the most relevant characteristics of reinforcement learning. This method allows machines and software agents to automatically determine the ideal behavior within a specific context in order to maximize its performance. Simple reward feedback is required for the agent to learn which action is best; this is known as the reinforcement signal.
+</p></section>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer>
+</footer>
+</body>
+</html>
